@@ -1,0 +1,20 @@
+# Secret environment variables
+.env
+
+# Python cache
+__pycache__/
+
+# Temporary test scripts
+final_test.py
+hello.py
+test_agent.py
+
+# Generated output files
+debate_transcript.md
+simple_model_results.md
+complex_model_results.md
+experimental_results.csv
+
+# Document files (we only want the PDF in the repo)
+*.docx
+*.xlsx
