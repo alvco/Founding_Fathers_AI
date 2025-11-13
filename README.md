@@ -1,12 +1,12 @@
 # AI Founding Fathers: Multi-Agent GIS Search
 
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+[![arXiv](https://img.shields.io/badge/arXiv-2511.09005-b31b1b.svg)](https://arxiv.org/abs/2511.09005)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **A comparative study of multi-agent pipeline architectures for enhancing LLM reasoning through gradual, incremental, and sequential (GIS) search.**
 
-> 📄 **[Read the full research paper on arXiv](https://arxiv.org/abs/XXXX.XXXXX)**
+> 📄 **[Read the full research paper on arXiv](https://arxiv.org/abs/2511.09005)**
 
 ---
 
@@ -27,7 +27,7 @@ Modern LLM applications increasingly rely on multi-agent architectures, but ther
 - **Proposes a systematic framework** (GIS search) for understanding LLM optimization
 - **Demonstrates empirically** that structuring a multi-agent pipeline according to GIS-search criteria improves reasoning quality
 - **Provides a production-grade implementation** showing best practices in multi-agent system design
-- **Bridges theory and practice** by connecting computational search-based interpretations to practical architecture
+- **Bridges theory and practice** by connecting computational search-based interpretations to practical architectures
 
 ---
 
@@ -41,7 +41,6 @@ The GIS framework asserts that LLM reasoning is best enhanced by structuring pip
 - **Incremental:** Each step builds upon and refines previous outputs through feedback
 - **Sequential:** Controlled progression prevents premature convergence to suboptimal solutions and local optima
 
-This framework synthesizes why techniques like Chain-of-Thought, self-refinement, and multi-agent debate are effective. More specifically, they all impose structured, modularized, and iterative processes on LLM computation.
 
 ---
 
@@ -298,7 +297,7 @@ The consistent outperformance of the complex model supports several hypotheses:
 
 ### Interesting Edge Cases
 
-**The Jefferson Immigration Scenario:** Both models misconstrued the nomenclature and context of the merit-based immigration question and conflating it with the maintenance of aristocratic privilege. However, the complex model still produced a more sophisticated, nuanced response despite this conceptual misinterpretation — demonstrating that GIS improves argument construction even when inheriting a flawed conceptual foudnation.
+**The Jefferson Immigration Scenario:** Both models misconstrued the nomenclature and context of the merit-based immigration question and viewed it as leading to the perpetuation of existing societal inequities. However, the complex model still produced a more sophisticated, nuanced response despite this conceptual misinterpretation — demonstrating that GIS improves argument construction even when inheriting a flawed conceptual foundation.
 
 ### Limitations
 
@@ -317,7 +316,7 @@ If you use this work in your research, please cite:
 @article{chauhan2025founding,
   title={AI Founding Fathers: A Case Study of Gradual, Incremental, and Sequential (GIS) Search in Multi-Agent Pipelines},
   author={Chauhan, Alvin},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  journal={arXiv preprint arXiv:2511.09005},
   year={2025}
 }
 ```
@@ -355,7 +354,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Alvin Chauhan**  
 📧 alvin.chauhan@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/alvin-chauhan-93855562)  
-📄 [arXiv Paper](https://arxiv.org/abs/XXXX.XXXXX)
+📄 [arXiv Paper](https://arxiv.org/abs/2511.09005)
 
 ---
 
