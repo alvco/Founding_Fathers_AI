@@ -137,24 +137,6 @@ python run_analysis.py
 ```
 Evaluates both models using the Arbiter Agent. Outputs quantitative scores and detailed justifications.
 
-### Quick Example
-
-```python
-from environment import DebateOrchestrator
-from rag_system import RAGSystem
-
-# Initialize system
-rag = RAGSystem(corpora_dir="corpora")
-orchestrator = DebateOrchestrator(rag_system=rag)
-
-# Generate argument using complex model
-result = orchestrator.run_complex_pipeline(
-    persona="hamilton",
-    question="Should the government prioritize reducing national debt?"
-)
-
-print(result['final_argument'])
-```
 
 ---
 
@@ -214,19 +196,6 @@ The consistent outperformance of the complex model supports several hypotheses:
 
 ---
 
-## Citation
-
-If you use this work in your research, please cite:
-
-```bibtex
-@article{chauhan2025founding,
-  title={AI Founding Fathers: A Case Study of Gradual, Incremental, and Sequential (GIS) Search in Multi-Agent Pipelines},
-  author={Chauhan, Alvin},
-  journal={arXiv preprint arXiv:2511.09005},
-  year={2025}
-}
-```
-
 
 ## License
 
@@ -234,12 +203,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## Acknowledgments
-
-- Historical texts sourced from [Founders Online](https://founders.archives.gov)
-- Built with [Anthropic Claude](https://www.anthropic.com), [ChromaDB](https://www.trychroma.com), and [Sentence Transformers](https://www.sbert.net)
-
----
 
 ## Contact
 
