@@ -14,7 +14,7 @@
 
 This repository contains the complete implementation and experimental results for my research on multi-agent pipelines and enhancing LLM reasoning which I synthesize into a systematic framework called gradual, incremental, and sequential (GIS) search. The project assesses whether explicitly structuring a multi-agent pipeline to ensure a **gradual, incremental, and sequential (GIS)** traversal of the search space improves language model performance.
 
-**Key Innovation:** I built two distinct multi-agent systems — a 4-agent baseline linear pipeline (simple model) and an 8-agent structured pipeline with a recursive refinement layer (complex model) — and ran a controlled experiment using RAG-powered historical personas of three US Founding Fathers (Hamilton, Jefferson, Madison) to generate responses to three contemporary political questions.
+To test this, I built two distinct multi-agent systems — a 4-agent baseline linear pipeline (simple model) and an 8-agent structured pipeline with a recursive refinement layer (complex model) — and ran a controlled experiment using RAG-powered historical personas of three US Founding Fathers (Hamilton, Jefferson, Madison) to generate responses to three contemporary political questions.
 
 **Result:** The 8-agent GIS-structured pipeline consistently outperformed the simple model across all 9 test cases and outscored its counterpart by an average of 16.7 points (88.3 vs 71.6).
 
@@ -79,10 +79,6 @@ Arguments from the complex model demonstrated:
 
 
 ## Installation
-
-### Prerequisites
-- Python 3.9 or higher
-- Anthropic API key (for Claude models)
 
 ### Setup
 
