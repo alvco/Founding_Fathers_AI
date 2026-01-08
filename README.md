@@ -6,7 +6,7 @@
 
 **A comparative study of multi-agent pipeline architectures for enhancing LLM reasoning through gradual, incremental, and sequential (GIS) search.**
 
-> 📄 **[Read the full research paper on arXiv](https://arxiv.org/abs/2511.09005)**
+> **(https://arxiv.org/abs/2511.09005)**
 
 ---
 
@@ -20,16 +20,6 @@ This repository contains the complete implementation and experimental results fo
 
 ---
 
-## Understanding The Implications
-
-Modern LLM applications increasingly rely on multi-agent architectures, but there's limited understanding of why certain design patterns work better than others. This research:
-
-- **Proposes a systematic framework** (GIS search) for understanding LLM optimization
-- **Demonstrates empirically** that structuring a multi-agent pipeline according to GIS-search criteria improves reasoning quality
-- **Provides a production-grade implementation** showing best practices in multi-agent system design
-- **Bridges theory and practice** by connecting computational search-based interpretations to practical architectures
-
----
 
 ## The GIS Framework
 
@@ -87,30 +77,6 @@ Arguments from the complex model demonstrated:
 
 ---
 
-## Technical Highlights
-
-This implementation showcases production-grade engineering practices:
-
-### 🏗️ **Modular Architecture**
-- **Separation of Concerns:** Each agent has a single, well-defined responsibility
-- **Dependency Injection:** RAG system and prompts injected into agents (not hardcoded)
-- **Externalized Configuration:** All prompts managed in `prompts.yaml` for rapid iteration
-
-### 🔍 **RAG System**
-- **Vector Store:** ChromaDB with SentenceTransformer embeddings
-- **Persona-Specific Filtering:** Metadata ensures Hamilton's agent only queries Hamilton's writings
-- **Efficient Retrieval:** Semantic search over 100K+ tokens of historical texts
-
-### 🛡️ **Robust Parsing**
-- **"Reason-Then-Extract" Pattern:** Two-stage LLM calls for reliable JSON extraction
-- **Fault Tolerance:** `dirtyjson` library handles minor formatting errors
-- **Type Safety:** Structured outputs validated before pipeline progression
-
-### 📊 **Evaluation Framework**
-- **Dual Assessment:** Quantitative (LLM arbiter) + qualitative (human analysis)
-- **Reproducible:** All prompts, data, and results version-controlled
-
----
 
 ## Installation
 
@@ -232,58 +198,6 @@ Founding_Fathers_AI/
 
 ---
 
-## Agent Descriptions
-
-### Core Pipeline Agents
-
-**Selector Agent**
-- Analyzes debate topic and persona
-- Identifies relevant core principle, historical precedent, and ideological ally
-- Outputs strategic brief for subsequent agents
-
-**Researcher Agent**
-- Queries RAG system with persona-specific filtering
-- Retrieves relevant passages from historical writings
-- Provides factual grounding for arguments
-
-**Thinker Agent**
-- **Simple model:** Generates single, direct evidence-based argument
-- **Complex model:** Generates three distinct argument types (orthodox, unorthodox, pragmatic)
-
-**Communicator Agent**
-- Stylistic enhancement and final polishing
-- Matches persona's authentic voice and rhetorical style
-- Produces final publishable argument
-
-### Recursive Refinement Agents (Complex Model Only)
-
-**Validator Agent**
-- Evaluates multiple candidate arguments
-- Uses the following scoring rubric: principles consistency (60%), personality consistency (25%), intellectual strength (15%)
-- Selects highest-scoring argument for stress-testing
-
-**Red Team Agent**
-- Adversarial role: identifies critical vulnerabilities
-- Simulates counterarguments from opposing founders
-- Finds the single most damaging attack vector
-
-**Strategist Agent**
-- Develops three defensive strategies:
-  - Direct rebuttal (challenge criticism head-on)
-  - Reframe & minimize (diminish importance)
-  - Concede & outweigh (acknowledge but justify trade-off)
-
-**Final Judge Agent**
-- Evaluates original + three strategic variations
-- Selects most persuasive and resilient argument
-- Produces final integrated output
-
-**Arbiter Agent** (Evaluation Only)
-- LLM-powered judge for comparative assessment
-- Uses equally weighted scoring criteria: structure, depth, support/justification, rhetoric/style
-- Provides quantitative verdict with detailed justification
-
----
 
 ## Key Findings & Discussion
 
@@ -294,10 +208,6 @@ The consistent outperformance of the complex model supports several hypotheses:
 1. **Structured refinement works:** Iterative self-criticism, stress-testing, and critical feedback improves argument quality
 2. **GIS principles generalize:** The framework successfully predicted which architecture would perform better
 3. **Specialization adds value:** Dedicated agents for validation, stress-testing, and strategy outperform monolithic generation
-
-### Interesting Edge Cases
-
-**The Jefferson Immigration Scenario:** Both models misconstrued the nomenclature and context of the merit-based immigration question and viewed it as leading to the perpetuation of existing societal inequities. However, the complex model still produced a more sophisticated, nuanced response despite this conceptual misinterpretation — demonstrating that GIS improves argument construction even when inheriting a flawed conceptual foundation.
 
 ### Limitations
 
@@ -321,20 +231,6 @@ If you use this work in your research, please cite:
 }
 ```
 
----
-
-## Future Work
-
-Potential extensions of this research:
-
-- **Scale validation:** Expand to n=100+ test cases with statistical significance testing
-- **Ablation studies:** Systematically isolate which architectural features drive improvements (e.g., sequential vs. parallel architectures, varying agent counts, removing refinement loops, etc.)
-- **Cross-model testing:** Validate GIS framework across GPT-4, Gemini, Llama models
-- **Domain transfer:** Test GIS principles on mathematical reasoning, code generation, scientific analysis
-- **Benchmark comparison:** Evaluate on standardized datasets (MMLU, HellaSwag, etc.)
-- **Production deployment:** Optimize for latency, cost, and reliability in real-world applications
-
----
 
 ## License
 
@@ -352,10 +248,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 **Alvin Chauhan**  
-📧 alvin.chauhan@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/alvin-chauhan-93855562)  
-📄 [arXiv Paper](https://arxiv.org/abs/2511.09005)
+alvin.chauhan@gmail.com  
+[LinkedIn](https://www.linkedin.com/in/alvin-chauhan-93855562)  
+[arXiv Paper](https://arxiv.org/abs/2511.09005)
 
 ---
 
-*This research was conducted independently as a portfolio project demonstrating end-to-end capabilities in AI system design, implementation, and evaluation.*
